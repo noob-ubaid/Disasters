@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active{
+    @apply font-bold border-b-2 border-b-black text-black pb-3
+}
+.btn{
+    @apply bg-primary text-white py-2 px-4 rounded-md font-onest text-[12px] sm:font-bold font-semibold
+}
