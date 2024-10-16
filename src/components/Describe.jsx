@@ -168,10 +168,10 @@ const Describe = () => {
 
         <div className='flex flex-col items-center mt-10'>
           <h2 className='font-bold font-onest text-center text-[24px]'>Which of these best describes the incident?</h2>
-          <div className=' md:w-[720px] grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-4'>
+          <div className='lg:w-[850px] md:w-[740px] mt-8 grid items-center md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-2 sm:gap-4'>
               {
                 card.map((data) => (
-                  <div key={data.id} className='flex items-center gap-3 bg-secondary rounded-md w-[180px] h-[70px]'>
+                  <div key={data.id} className='flex cursor-pointer items-center gap-3 bg-secondary rounded-md w-[180px] h-[70px]'>
                     <img className='pl-4' src={data.img} alt="" />
                     <p className='text-[#71717A] text-[14px] font-onest'>{data.title}</p>
                   </div>

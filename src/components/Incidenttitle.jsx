@@ -72,6 +72,18 @@ const Incidenttitle = () => {
               ) : null
             }
         </div>
+
+
+        <div className='flex mt-10  justify-center'>
+            <div className='md:mx-0 mx-5'>
+                <h3 className='text-[#09090B]  text-[24px] font-bold font-onest'>Let’s give the incident a title?</h3>
+                <p className='text-[#71717A] mt-2 font-onest text-[14px] '>Make a title that will easily identify the incidents</p>
+                <input className='bg-secondary mt-2 font-onest w-full p-2 rounded-md'placeholder='Add title here' type="text" />
+                <h3 className='text-[#09090B] mt-2 text-[24px] font-bold font-onest'>Describe what happened during the incident?</h3>
+                <p className='text-[#71717A] mt-2 font-onest text-[14px] '>Share some information about the incident. The when, where, how. </p>
+                <input className='bg-secondary mt-2 font-onest h-[100px] w-full rounded-md p-2'placeholder='Type here' type="text" />
+            </div>
+        </div>
        
     </>
   )
