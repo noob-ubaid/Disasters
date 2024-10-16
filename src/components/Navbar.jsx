@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
-import Commonbtn from '../../reuseableComponent/Commonbtn'
+
 
 const Navbar = () => {
   const [isMenu,setIsMenu] = useState(false)
