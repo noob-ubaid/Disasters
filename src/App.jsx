@@ -9,6 +9,7 @@ import Cyper from './components/Cyper'
 import GetStarted from './components/GetStarted'
 import Describe from './components/Describe'
 import Incidenttitle from './components/Incidenttitle'
+import Gps from './components/Gps'
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
         <Route path='/getstarted' element={ <GetStarted/> } />
         <Route path='/describeincidents' element={ <Describe/> } />
         <Route path='/incidenttitle' element={ <Incidenttitle/> } />
+        <Route path='/gps' element={ <Gps/> } />
       </Routes>
     </BrowserRouter>
   )

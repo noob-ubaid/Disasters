@@ -87,12 +87,9 @@ function Dashboard() {
                 </div>
               </div>
               <div onClick={toggleMenu}>
-              {/* <i class="fa-solid md:hidden block ml-2 text-[15px] fa-bars"></i> */}
               {isMenu ? (<i  class='fa-solid md:hidden block ml-2 text-[15px] fa-xmark'></i>) : (<i class='fa-solid md:hidden block ml-2 text-[15px] fa-bars'></i>)}
               </div>
             </div>
-
-
 
 
             <div className='flex sm:flex-row flex-col  items-center lg:px-[85px] lg:py-[23px] md:px[60px] md:py-[18px] px-4 py-3 justify-between'>
