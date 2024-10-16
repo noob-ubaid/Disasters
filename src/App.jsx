@@ -7,6 +7,8 @@ import Activities from './components/activities'
 import Location from './components/Location'
 import Documents from './components/Documents'
 import Cyper from './components/cyper'
+import GetStarted from './components/GetStarted'
+import Describe from './components/Describe'
 
 function App() {
 
@@ -22,6 +24,8 @@ function App() {
         <Route path="/activities" element={ <Activities/> } />
         <Route path="/documents" element={ <Documents/> } />
         <Route path="/cyper" element={ <Cyper/> } />
+        <Route path='/getstarted' element={ <GetStarted/> } />
+        <Route path='/describeincidents' element={ <Describe/> } />
       </Routes>
     </BrowserRouter>
   )
