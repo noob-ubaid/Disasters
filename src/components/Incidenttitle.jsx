@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { NavLink,useNavigate } from 'react-router-dom'
 
-const Describe = () => {
+const Incidenttitle = () => {
   const [isMenu,setIsMenu] = useState(false)
   const toggleMenu = () => {
     setIsMenu(!isMenu)
@@ -33,7 +33,6 @@ const Describe = () => {
                 </div>
               </div>
               <div onClick={toggleMenu}>
-
               {isMenu ? (<i  class='fa-solid md:hidden block ml-2 text-[15px] fa-xmark'></i>) : (<i class='fa-solid md:hidden block ml-2 text-[15px] fa-bars'></i>)}
               </div>
             </div>
@@ -53,8 +52,8 @@ const Describe = () => {
               </div>
 
               <div className='flex items-center sm:mt-0 mt-3 gap-2  sm:gap-[14px]'>
-                <button onClick={() => navigate("/getstarted")} className='font-bold font-onest text-[#71717A] text-[12px]  bg-white py-3 px-[50px] rounded-md'>Back</button>
-                <button onClick={() => navigate("/Incidenttitle")} className='font-bold font-onest text-white text-[12px]  bg-primary py-3 px-[41px] rounded-md'>Next step</button>
+                <button onClick={() => navigate("/describeincidents")} className='font-bold font-onest text-[#71717A] text-[12px]  bg-white py-3 px-[50px] rounded-md'>Back</button>
+                <button onClick={() => navigate("")} className='font-bold font-onest text-white text-[12px]  bg-primary py-3 px-[41px] rounded-md'>Next step</button>
               </div>  
             </div>
             
@@ -73,18 +72,9 @@ const Describe = () => {
               ) : null
             }
         </div>
-
-
-        <div className='flex flex-col items-center mt-10'>
-          <h2 className='font-bold font-onest text-[24px]'>Which of these best describes the incident?</h2>
-          <div>
-
-          </div>
-        </div>
-
        
     </>
   )
 }
 
-export default Describe
+export default Incidenttitle

@@ -90,7 +90,7 @@ const Navbar = () => {
                     ))
                 }
             </div>
-            <button  onClick={() => navigate("/describeincidents")} className='bg-primary py-2 px-4 rounded-md text-[12px] md:mt-16 mt-10 font-bold text-white'>Get started</button>
+            <button  onClick={() => navigate("/describeincidents")} className='bg-primary py-3 px-[41px] mb-16 rounded-md text-[12px] md:mt-16 mt-10 font-bold text-white'>Get started</button>
             
         </div>
     </>

@@ -9,6 +9,7 @@ import Documents from './components/Documents'
 import Cyper from './components/cyper'
 import GetStarted from './components/GetStarted'
 import Describe from './components/Describe'
+import Incidenttitle from './components/Incidenttitle'
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
         <Route path="/cyper" element={ <Cyper/> } />
         <Route path='/getstarted' element={ <GetStarted/> } />
         <Route path='/describeincidents' element={ <Describe/> } />
+        <Route path='/incidenttitle' element={ <Incidenttitle/> } />
       </Routes>
     </BrowserRouter>
   )
