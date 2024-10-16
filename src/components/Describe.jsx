@@ -1,6 +1,97 @@
 import React, { useState } from 'react'
 import { NavLink,useNavigate } from 'react-router-dom'
-
+const card =[
+  {
+    img:"img/avaalnche.png",
+    title:"Avalanche",
+    id:"1"
+  },
+  {
+    img:"img/biological.png",
+    title:"Biological",
+    id:"2"
+  },
+  {
+    img:"blizzard.png",
+    title:"Blizzard",
+    id:"3"
+  },
+  {
+    img:"img/cold.png",
+    title:"Cold/Freezing",
+    id:"4"
+  },
+  {
+    img:"img/drought.png",
+    title:"Drought",
+    id:"5"
+  },
+  {
+    img:"img/earthquake.png",
+    title:"Earthquake",
+    id:"6"
+  },
+  {
+    img:"img/flooding.png",
+    title:"Flooding",
+    id:"7"
+  },
+  {
+    img:"img/heat.png",
+    title:"Heat Wave",
+    id:"8"
+  },
+  {
+    img:"img/hail.png",
+    title:"Hail",
+    id:"9"
+  },
+  {
+    img:"img/lighting.png",
+    title:"Lighting",
+    id:"10"
+  },
+  {
+    img:"img/Manmade.png",
+    title:"Man Made",
+    id:"11"
+  },
+  {
+    img:"img/mudslide.png",
+    title:"Mudslide",
+    id:"12"
+  },
+  {
+    img:"img/storm.png",
+    title:"Severe Storm",
+    id:"13"
+  },
+  {
+    img:"img/storm.png",
+    title:"Strong Wind",
+    id:"14"
+  },
+  {
+    img:"img/tornado.png",
+    title:"Tornado",
+    id:"15"
+  },
+  {
+    img:"img/tsunami.png",
+    title:"Tsunumi",
+    id:"16"
+  },
+  {
+    img:"img/volcanic.png",
+    title:"Volcanic Eruption",
+    id:"17"
+  },
+  {
+    img:"img/wild.png",
+    title:"Wildfire",
+    id:"18"
+  },
+]
 const Describe = () => {
   const [isMenu,setIsMenu] = useState(false)
   const toggleMenu = () => {
@@ -77,7 +168,7 @@ const Describe = () => {
 
         <div className='flex flex-col items-center mt-10'>
           <h2 className='font-bold font-onest text-[24px]'>Which of these best describes the incident?</h2>
-          <div>
+          <div className='flex items-center'>
 
           </div>
         </div>
