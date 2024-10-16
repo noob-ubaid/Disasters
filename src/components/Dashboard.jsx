@@ -125,25 +125,7 @@ function Dashboard() {
         </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          <div className='flex items-center justify-center flex-wrap  lg:px-[50px] lg:py-[40px] md:px-[30px] md:py-[20px] px-[20px] py-[15px] lg:gap-8  md:gap-[25px]'>
+        <div className='flex items-center justify-center flex-wrap  lg:px-[50px] lg:py-[40px] md:px-[30px] md:py-[20px] px-[20px] py-[15px] lg:gap-8  md:gap-[25px]'>
             {
               card.map((data) => (
                 <div key={data.id} className='md:w-[306px] sm:mt-0 mt-7  flex flex-col md:h-[337px] '>
@@ -154,7 +136,7 @@ function Dashboard() {
                 </div>
               ))
             }
-          </div>
+        </div>
           
 
           <div className='relative'>
