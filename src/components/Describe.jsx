@@ -174,8 +174,8 @@ const Describe = () => {
           <div className='lg:w-[850px] md:w-[740px] mb-10 mt-8 grid items-center md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-2 sm:gap-4'>
               {
                 card.map((data) => (
-                  <div onClick={{background}} key={data.id} className='flex cursor-pointer items-center gap-3 bg-secondary rounded-md w-[180px] h-[70px]'>
-                    <img className='pl-4' src={data.img} alt="" />
+                  <div onClick={{background}} key={data.id} className='flex hover:text-white hover:bg-primary  transition-all cursor-pointer items-center gap-3 bg-secondary rounded-md w-[180px] h-[70px]'>
+                    <img className='pl-4'  src={data.img} alt="" />
                     <p className='text-[#71717A] text-[14px] font-onest'>{data.title}</p>
                   </div>
                 ))

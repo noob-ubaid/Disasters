@@ -1,6 +1,39 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import Button from './common/Button'
+const card = [
+  {
+    img:"img/day.png",
+    title:"Whitechapel Rd.",
+    description:"Tulare County,  Los Angles, CA 23415",
+    price:"$1,456,654.00",
+    id:"1"
+  },
+
+  {
+    img:"img/night.png",
+    title:"Whitechapel Rd.",
+    description:"Tulare County,  Los Angles, CA 23415",
+    price:"$1,456,654.00",
+    id:"2"
+  },
+
+  {
+    img:"img/day.png",
+    title:"Whitechapel Rd.",
+    description:"Tulare County,  Los Angles, CA 23415",
+    price:"$1,456,654.00",
+    id:"3"
+  },
+
+  {
+    img:"img/day.png",
+    title:"Whitechapel Rd.",
+    description:"Tulare County,  Los Angles, CA 23415",
+    price:"$1,456,654.00",
+    id:"4"
+  },
+]
 const Location = () => {
   const [isMenu,setIsMenu] = useState(false)
   const toggleMenu = () => {
@@ -74,6 +107,67 @@ const Location = () => {
                 <button className='btn sm:py-[17px] py-2 px-2 sm:px-[25px]'>+ New Location</button>
               </div>  
             </div>
+          </div>
+
+
+
+          <div className='flex items-center flex-col md:mx-0 mx-5 lg:flex-row mt-10 lg:px-[40px] md:px-[30px] justify-between'>
+            <div className='flex flex-col gap-10'>
+              <div className='flex items-center gap-2'>
+                <img src="img/location.png" alt="" />
+                <div>
+                  <p className='text-[#6B7280] text-[14px ]'>Location</p>
+                  <h3 className='text-[20px] font-onest font-bold'>Tulare County,  Los Angles, CA 23415</h3>
+                </div>
+              </div>
+
+
+              <div className='flex items-center border-b border-b-gray-300 pb-8 gap-2'>
+                <img src="img/cost.png" alt="" />
+                <div>
+                  <p className='text-[#6B7280] text-[14px ]'>Approx Cost</p>
+                  <h3 className='text-[20px] font-onest font-bold'>$60,607,456.00</h3>
+                </div>
+              </div>
+
+              <div>
+                <h3 className='text-[14px] font-bold font-onest mb-2'>Description</h3>
+                <p className='font-onest text-[16px] w-full border-b border-b-gray-300 pb-8 md:w-[600px] text-[#71717A]'>Lorem ipsum dolar sit general sac mascho werhoLorem ipsum dolar sit general sac mascho werhoLorem ipsum dolar sit general sac mascho werhoLorem ipsum dolar sit general sac mascho werhoLorem ipsum dolar sit general sac mascho werhoLorem ipsum dolar sit general sac mascho werho</p>
+              </div>
+
+              <div className='flex items-center justify-between'>
+                  <h3 className='text-[14px] font-bold font-onest mb-2'>Description</h3>
+                  <p className='text-[14px] font-onest text-[#A1A1AA] underline md:pr-10'>See All</p>
+              </div>
+
+
+    
+            </div>
+
+
+            <div>
+              <p className='text-[14px] font-onest text-[#71717A] mb-4 md:mt-0 mt-4'> Incident Map</p>
+              <img src="img/mainmap.png" alt="" />
+              <p className='text-[14px] font-onest text-[#71717A] mt-4'> Start 19.1232, -118.233     End 19.3245, -119.2323</p>
+            </div>
+            
+          </div>
+
+
+          <div className='flex items-center md:justify-start justify-center '>
+              <div className='flex ml-[15px] justify-center gap-1.5 md:justify-between w-[50%] flex-wrap items-center '>
+                    {
+                      card.map((data) =>(
+                        <div key={data.id} className=' mt-3'>
+                          <img src={data.img} alt="" />
+                          <h3 className='text-[14px] font-bold '>{data.title}</h3>
+                          <p className='font-onest w-[200px] text-[#71717A]'>{data.description}</p>
+                          <h3 className='text-[14px] font-bold '>{data.price}</h3>
+
+                        </div> 
+                      ))
+                    }
+                  </div>
           </div>
     </>
   )
