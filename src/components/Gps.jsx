@@ -53,7 +53,7 @@ const Gps = () => {
 
               <div className='flex items-center sm:mt-0 mt-3 gap-2  sm:gap-[14px]'>
                 <button onClick={() => navigate("/incidenttitle")} className='font-bold font-onest text-[#71717A] text-[12px]  bg-white py-3 px-[50px] rounded-md'>Back</button>
-                <button onClick={() => navigate("")} className='font-bold font-onest text-white text-[12px]  bg-primary py-3 px-[41px] rounded-md'>Finished</button>
+                <button onClick={() => navigate("/location")} className='font-bold font-onest text-white text-[12px]  bg-primary py-3 px-[41px] rounded-md'>Finished</button>
               </div>  
             </div>
             
