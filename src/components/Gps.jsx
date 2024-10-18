@@ -72,6 +72,15 @@ const Gps = () => {
               ) : null
             }
         </div>
+
+
+        <div className='flex md:mx-0 mx-4 items-center mt-10 justify-center'>
+          <div>
+            <h2 className='font-onest font-bold text-[24px] '>Where’s the incident?</h2>
+            <p className='text-[14px] mt-1 lg:w-[518px] text-[#71717A] font-onest'>Enter a GPS, address. or pin point on the map. Try to be as accurate as possible, or click:Jurisdiction Wide</p>
+            <img className='mb-10 mt-4' src="img/map.png" alt="" />
+          </div>
+        </div>
     </>
   )
 }
