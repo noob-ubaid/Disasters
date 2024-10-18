@@ -1,57 +1,7 @@
 import React ,{useState} from 'react'
-// import { NavLink} from 'react-router-dom'
 import { NavLink ,useNavigate} from 'react-router-dom'
-const card = [
-  {
-      img:"img/bg-1.png",
-      title:"Whitechapel Rd.",
-      location:"Tulare County,  Los Angles, CA 23415",
-      price:"$1,456,654.00",
-      id:"1"
-  },
-
-  {
-      img:"img/bg-2.png",
-      title:"Whitechapel Rd.",
-      location:"Tulare County,  Los Angles, CA 23415",
-      price:"$1,456,654.00",
-      id:"2"
-  },
-
-  {
-      img:"img/bg-3.png",
-      title:"Whitechapel Rd.",
-      location:"Tulare County,  Los Angles, CA 23415",
-      price:"$1,456,654.00",
-      id:"3"
-  },
-
-  {
-      img:"img/bg-4.png",
-      title:"Whitechapel Rd.",
-      location:"Tulare County,  Los Angles, CA 23415",
-      price:"$1,456,654.00",
-      id:"4"
-  },
-
-  {
-      img:"img/bg-5.png",
-      title:"Whitechapel Rd.",
-      location:"Tulare County,  Los Angles, CA 23415",
-      price:"$1,456,654.00",
-      id:"5"
-  },
-
-  {
-      img:"img/bg-6.png",
-      title:"Whitechapel Rd.",
-      location:"Tulare County,  Los Angles, CA 23415",
-      price:"$1,456,654.00",
-      id:"6"
-  },
-]
-
-
+import card from './common/card.json'
+import Button from './common/Button'
 const Incidents = () => {
   const [isMenu,setIsMenu] = useState(false)
   const toggleMenu = () => {
@@ -60,7 +10,7 @@ const Incidents = () => {
  const navigate = useNavigate();
   return (
     <>
-    <div className='bg-secondary p-2'>
+        <div className='bg-secondary p-2'>
             <div className='flex items-center md:px-[50px] md:py-[13px] px-[11px] py-[7px] lg:px-[85px] lg:py-[25px] border-b border-b-[#3F3F46] justify-between'>
               <img className='sm:w-[132px] sm:h-[37px] w-[120px] h-[28px]' src="img/logo.png" alt="" />
 
@@ -84,7 +34,6 @@ const Incidents = () => {
                 </div>
               </div>
               <div onClick={toggleMenu}>
-              {/* <i class="fa-solid md:hidden block ml-2 text-[15px] fa-bars"></i> */}
               {isMenu ? (<i  class='fa-solid md:hidden block ml-2 text-[15px] fa-xmark'></i>) : (<i class='fa-solid md:hidden block ml-2 text-[15px] fa-bars'></i>)}
               </div>
             </div>
@@ -99,14 +48,14 @@ const Incidents = () => {
               </div>  
 
               <div className='flex items-center gap-2 sm:mt-0 mt-2 sm:gap-[14px]'>
-                <button className='flex bg-white rounded p-2 items-center gap-1 sm:gap-2'><i class="fa-solid text-[10px] sm:text-[12px] text-[#71717A] fa-magnifying-glass"></i>
-                  <span className='sm:text-[12px] text-[10px] text-[#71717A] font-onest'>Search incident</span>
-                </button>
+                <Button className='flex bg-white rounded p-2 sm:py-[17px]  items-center gap-1 sm:gap-2'><i class="fa-solid text-[10px] sm:text-[12px] text-[#71717A] fa-magnifying-glass"></i>
+                  <span className='sm:text-[12px] text-[10px] text-[#A1A1AA] font-onest'>Search incident</span>
+                </Button>
 
-                <button className=' bg-white rounded text-[10px] sm:text-[12px] text-[#71717A] font-onest p-2'>Sort By: Date modified </button>
-                <div onClick={() => navigate("/getstarted")} className='btn flex cursor-pointer items-center gap-1'> <span className='text-[16px] '>+</span>
+                <Button className='sm:py-[17px] py-2 font-normal bg-white text-[#A1A1AA] px-2 sm:px-[10px]'>Sort By: Date modified </Button>
+                <button onClick={() => navigate("/getstarted")} className='btn flex cursor-pointer items-center gap-1 sm:py-[14px] py-1 px-2 sm:px-[23px]'> <span className='text-[16px] '>+</span>
                   New Incident
-                </div>
+                </button>
               </div>  
             </div>
             {
@@ -128,11 +77,15 @@ const Incidents = () => {
         <div className='flex items-center justify-center flex-wrap  lg:px-[50px] lg:py-[40px] md:px-[30px] md:py-[20px] px-[20px] py-[15px] lg:gap-8  md:gap-[25px]'>
             {
               card.map((data) => (
-                <div key={data.id} className='md:w-[306px] sm:mt-0 mt-7  flex flex-col md:h-[337px] '>
+                <div key={data.id} className='md:w-[306px] relative sm:mt-0 mt-7  flex flex-col md:h-[337px] '>
                   <img className='md:w-full md:h-full w-72 h-60 ml-1' src={data.img} alt="" />
                   <h3 className='text-[#09090B] ml-1 mt-2 text-[16px] font-onest font-bold'>{data.title}</h3>
                   <p className='text-[#71717A] ml-1 font-onest text-[14px]'>{data.location}</p>
                   <p className='font-onest font-bold ml-1 mt-1 text-[16px] text-[#09090B]'>{data.price}</p>
+                  <div className='flex items-center absolute top-3 right-3 gap-1 bg-white p-2 rounded-full'>
+                    <img src="img/rain.png" alt="" />
+                    <h4 className='text-xs font-onest font-bold '>Blizzard</h4>
+                  </div>
                 </div>
               ))
             }

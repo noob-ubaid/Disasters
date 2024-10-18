@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
+import Button from './common/Button'
 const Location = () => {
   const [isMenu,setIsMenu] = useState(false)
   const toggleMenu = () => {
@@ -42,19 +43,35 @@ const Location = () => {
             </div>
 
 
+            {
+              isMenu ? (
+                <ul className='flex flex-col p-6 w-full z-50 overflow-y-hidden h-screen bg-secondary items-start gap-7 sm:gap-[35px] font-onest text-[14px] text-[#A1A1AA]'>
+                <li><NavLink to="/">Dashboard</NavLink></li>
+                <li><NavLink to="/incidients">Incidents</NavLink></li>
+                <li><NavLink to="/Location">Locations</NavLink></li>
+                <li><NavLink to="/activities">Activities</NavLink></li>
+                <li><NavLink to="/documents">Documents</NavLink></li>
+                <li><NavLink to="/cyper">Cypher AI</NavLink></li>
+              </ul>
+              ) : null
+            }
+
+
             <div className='flex sm:flex-row flex-col  items-center lg:px-[85px] lg:py-[23px] md:px[60px] md:py-[18px] px-4 py-3 justify-between'>
               <div>
                 <p className='font-onest text-[12px] text-[#71717A]'>Incidents - DR-4699 March 2023 Severe Storms </p>
-                <h2 className='text-[#09090B] font-bold sm:text-[26px] text-[16px] font-onest'>DR-4699 March 2023 Severe Storms</h2>
+                <div className='text-[#09090B] font-bold mt-1 flex items-center gap-2 sm:text-[26px] text-[16px] font-onest'>
+                  <img src="img/storm.png" alt="" />
+                  <h2> DR-4699 March 2023 Severe Storms</h2></div>
               </div>  
 
               <div className='flex items-center gap-2 sm:mt-0 mt-2 sm:gap-[14px]'>
-                <button className='flex bg-white rounded p-2 items-center gap-1 sm:gap-2'><i class="fa-solid text-[10px] sm:text-[12px] text-[#71717A] fa-magnifying-glass"></i>
-                  <span className='sm:text-[12px] text-[10px] text-[#71717A] font-onest'>Search incident</span>
-                </button>
+              <Button className='flex bg-white rounded p-2 sm:py-[17px]  items-center gap-1 sm:gap-2'><i class="fa-solid text-[10px] sm:text-[12px] text-[#71717A] fa-magnifying-glass"></i>
+                  <span className='sm:text-[12px] text-[10px] text-[#A1A1AA] font-onest'>Search incident</span>
+                </Button>
 
-                <button className=' bg-white rounded text-[10px] sm:text-[12px] text-[#71717A] font-onest p-2'>Sort By: Date modified </button>
-                <button className='btn '>+ New Location</button>
+                <Button className='sm:py-[17px] py-2 font-normal bg-white text-[#A1A1AA] px-2 sm:px-[10px]'>Sort By: Date modified </Button>
+                <button className='btn sm:py-[17px] py-2 px-2 sm:px-[25px]'>+ New Location</button>
               </div>  
             </div>
           </div>

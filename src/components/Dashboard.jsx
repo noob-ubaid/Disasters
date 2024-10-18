@@ -1,58 +1,12 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
-const card = [
-  {
-      img:"img/bg-1.png",
-      title:"Whitechapel Rd.",
-      location:"Tulare County,  Los Angles, CA 23415",
-      price:"$1,456,654.00",
-      id:"1"
-  },
-
-  {
-      img:"img/bg-2.png",
-      title:"Whitechapel Rd.",
-      location:"Tulare County,  Los Angles, CA 23415",
-      price:"$1,456,654.00",
-      id:"2"
-  },
-
-  {
-      img:"img/bg-3.png",
-      title:"Whitechapel Rd.",
-      location:"Tulare County,  Los Angles, CA 23415",
-      price:"$1,456,654.00",
-      id:"3"
-  },
-
-  {
-      img:"img/bg-4.png",
-      title:"Whitechapel Rd.",
-      location:"Tulare County,  Los Angles, CA 23415",
-      price:"$1,456,654.00",
-      id:"4"
-  },
-
-  {
-      img:"img/bg-5.png",
-      title:"Whitechapel Rd.",
-      location:"Tulare County,  Los Angles, CA 23415",
-      price:"$1,456,654.00",
-      id:"5"
-  },
-
-  {
-      img:"img/bg-6.png",
-      title:"Whitechapel Rd.",
-      location:"Tulare County,  Los Angles, CA 23415",
-      price:"$1,456,654.00",
-      id:"6"
-  },
-]
+import card from './common/card.json'
+import Button from './common/Button'
+import {cn} from './common/index' 
 function Dashboard() {
   const [isMenu,setIsMenu] = useState(false)
   const toggleMenu = () => {
-    setIsMenu(!isMenu)
+    setIsMenu(!isMenu);
   }
 
 
@@ -99,12 +53,12 @@ function Dashboard() {
               </div>  
 
               <div className='flex items-center gap-2 sm:mt-0 mt-2 sm:gap-[14px]'>
-                <button className='flex bg-white rounded p-2 items-center gap-1 sm:gap-2'><i class="fa-solid text-[10px] sm:text-[12px] text-[#71717A] fa-magnifying-glass"></i>
-                  <span className='sm:text-[12px] text-[10px] text-[#71717A] font-onest'>Search incident</span>
-                </button>
+                <Button className='flex bg-white rounded p-2 sm:py-[17px]  items-center gap-1 sm:gap-2'><i class="fa-solid text-[10px] sm:text-[12px] text-[#71717A] fa-magnifying-glass"></i>
+                  <span className='sm:text-[12px] text-[10px] text-[#A1A1AA] font-onest'>Search incident</span>
+                </Button>
 
-                <button className=' bg-white rounded text-[10px] sm:text-[12px] text-[#71717A] font-onest p-2'>Sort By: Date modified </button>
-                <button className='btn '>Cypher Ai</button>
+                <Button className='sm:py-[17px] py-2 font-normal bg-white text-[#A1A1AA] px-2 sm:px-[10px]'>Sort By: Date modified </Button>
+                <Button className="sm:py-[17px] py-2 px-2 sm:px-[25px]">Cypher Ai</Button>
               </div>  
             </div>
             {
@@ -125,11 +79,15 @@ function Dashboard() {
         <div className='flex items-center justify-center flex-wrap  lg:px-[50px] lg:py-[40px] md:px-[30px] md:py-[20px] px-[20px] py-[15px] lg:gap-8  md:gap-[25px]'>
             {
               card.map((data) => (
-                <div key={data.id} className='md:w-[306px] sm:mt-0 mt-7  flex flex-col md:h-[337px] '>
+                <div key={data.id} className='md:w-[306px] relative sm:mt-0 mt-7  flex flex-col md:h-[337px] '>
                   <img className='md:w-full md:h-full w-72 h-60 ml-1' src={data.img} alt="" />
                   <h3 className='text-[#09090B] ml-1 mt-2 text-[16px] font-onest font-bold'>{data.title}</h3>
                   <p className='text-[#71717A] ml-1 font-onest text-[14px]'>{data.location}</p>
                   <p className='font-onest font-bold ml-1 mt-1 text-[16px] text-[#09090B]'>{data.price}</p>
+                  <div className='flex items-center absolute top-3 right-3 gap-1 bg-white p-2 rounded-full'>
+                    <img src="img/rain.png" alt="" />
+                    <h4 className='text-xs font-onest font-bold '>Blizzard</h4>
+                  </div>
                 </div>
               ))
             }

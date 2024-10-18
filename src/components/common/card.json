@@ -1,0 +1,49 @@
+[
+    {
+        "img":"img/bg-1.png",
+        "title":"Whitechapel Rd.",
+        "location":"Tulare County,  Los Angles, CA 23415",
+        "price":"$1,456,654.00",
+        "id":"1"
+    },
+  
+    {
+        "img":"img/bg-2.png",
+        "title":"Whitechapel Rd.",
+        "location":"Tulare County,  Los Angles, CA 23415",
+        "price":"$1,456,654.00",
+        "id":"2"
+    },
+  
+    {
+        "img":"img/bg-3.png",
+        "title":"Whitechapel Rd.",
+        "location":"Tulare County,  Los Angles, CA 23415",
+        "price":"$1,456,654.00",
+        "id":"3"
+    },
+  
+    {
+        "img":"img/bg-4.png",
+        "title":"Whitechapel Rd.",
+        "location":"Tulare County,  Los Angles, CA 23415",
+        "price":"$1,456,654.00",
+       " id":"4"
+    },
+  
+    {
+        "img":"img/bg-5.png",
+        "title":"Whitechapel Rd.",
+        "location":"Tulare County,  Los Angles, CA 23415",
+        "price":"$1,456,654.00",
+        "id":"5"
+    },
+  
+    {
+        "img":"img/bg-6.png",
+        "title":"Whitechapel Rd.",
+        "location":"Tulare County,  Los Angles, CA 23415",
+        "price":"$1,456,654.00",
+        "id":"6"
+    }
+  ]
