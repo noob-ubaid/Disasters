@@ -175,7 +175,7 @@ const Describe = () => {
               {
                 card.map((data) => (
                   <div onClick={{background}} key={data.id} className='flex hover:text-white hover:bg-primary  transition-all cursor-pointer items-center gap-3 bg-secondary rounded-md w-[180px] h-[70px]'>
-                    <img className='pl-4'  src={data.img} alt="" />
+                    <img className='pl-4 '  src={data.img} alt="" />
                     <p className='text-[#71717A] text-[14px] font-onest'>{data.title}</p>
                   </div>
                 ))

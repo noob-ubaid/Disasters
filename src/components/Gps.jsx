@@ -79,10 +79,14 @@ const Gps = () => {
             <h2 className='font-onest font-bold text-[24px] '>Where’s the incident?</h2>
             <p className='text-[14px] mt-1 lg:w-[518px] text-[#71717A] font-onest'>Enter a GPS, address. or pin point on the map. Try to be as accurate as possible, or click:Jurisdiction Wide</p>
             <div className='relative'>
-              <img className='mb-10  md:w-[750px] md:h-[450px] mt-4' src="img/map-1.png" alt="" />
-              <div className='flex items-center gap-2 bg-[#F4F4F5]'>
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input className='font-onest bg-[#F4F4F5] text-[12px] text-[#71717A]' type="text" placeholder='Enter incident address or GPS' />
+              <img className='mb-10 rounded-md md:w-[750px] md:h-[450px] mt-4' src="img/map-1.png" alt="" />
+              <div className='flex items-center gap-2 absolute top-3 left-3 rounded-sm p-2 bg-[#F4F4F5]'>
+                <i class="fa-solid text-[#71717A] fa-magnifying-glass"></i>
+                <input className='font-onest outline-none bg-[#F4F4F5] text-[12px] text-[#71717A]' type="text" placeholder='Enter incident address or GPS' />
+              </div>
+              <div className='flex items-center gap-2 absolute top-[55px] left-3 p-2 rounded-sm  bg-[#F4F4F5]'>
+                <i class="fa-solid text-[#71717A] fa-magnifying-glass"></i>
+                <input className='font-onest outline-none bg-[#F4F4F5] text-[12px] text-[#71717A]' type="text" placeholder='Pinpoint damage' />
               </div>
             </div>
           </div>
