@@ -48,11 +48,11 @@ const Incidents = () => {
               </div>  
 
               <div className='flex items-center gap-2 sm:mt-0 mt-2 sm:gap-[14px]'>
-                <Button className='flex bg-white rounded p-2 sm:py-[17px]  items-center gap-1 sm:gap-2'><i class="fa-solid text-[10px] sm:text-[12px] text-[#71717A] fa-magnifying-glass"></i>
+                <Button className='flex bg-white rounded p-2 sm:py-[17px] py-3 items-center gap-1 sm:gap-2'><i class="fa-solid text-[10px] sm:text-[12px] text-[#71717A] fa-magnifying-glass"></i>
                   <span className='sm:text-[12px] text-[10px] text-[#A1A1AA] font-onest'>Search incident</span>
                 </Button>
 
-                <Button className='sm:py-[17px] py-2 font-normal bg-white text-[#A1A1AA] px-2 sm:px-[10px]'>Sort By: Date modified </Button>
+                <Button className='sm:py-[17px] sm:text-[12px] text-[10px] py-3 font-normal bg-white text-[#A1A1AA] px-2 sm:px-[10px]'>Sort By: Date modified </Button>
                 <button onClick={() => navigate("/getstarted")} className='btn flex cursor-pointer items-center gap-1 sm:py-[14px] py-1 px-2 sm:px-[23px]'> <span className='text-[16px] '>+</span>
                   New Incident
                 </button>

@@ -78,7 +78,13 @@ const Gps = () => {
           <div>
             <h2 className='font-onest font-bold text-[24px] '>Where’s the incident?</h2>
             <p className='text-[14px] mt-1 lg:w-[518px] text-[#71717A] font-onest'>Enter a GPS, address. or pin point on the map. Try to be as accurate as possible, or click:Jurisdiction Wide</p>
-            <img className='mb-10 mt-4' src="img/map.png" alt="" />
+            <div className='relative'>
+              <img className='mb-10  md:w-[750px] md:h-[450px] mt-4' src="img/map-1.png" alt="" />
+              <div className='flex items-center gap-2 bg-[#F4F4F5]'>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input className='font-onest bg-[#F4F4F5] text-[12px] text-[#71717A]' type="text" placeholder='Enter incident address or GPS' />
+              </div>
+            </div>
           </div>
         </div>
     </>
